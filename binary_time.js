@@ -34,7 +34,9 @@ let binaryTimeCalcul = () => {
   console.log(binary);
   document.getElementById(
     "binary_time"
-  ).innerHTML = `Nombre de secondes : ${seconde}, puis en binaire : ${binary}`;
+  ).innerHTML = `Nombre de secondes : ${seconde}, puis en binaire : ${binary.join(
+    ""
+  )}`;
 };
 
 setInterval(binaryTimeCalcul, 1000);
